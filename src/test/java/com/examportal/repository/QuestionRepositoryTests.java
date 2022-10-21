@@ -181,6 +181,9 @@ public class QuestionRepositoryTests {
 		Assertions.assertThat(savedquestion).isNotNull();
 		Assertions.assertThat(savedquestion.getQuestionId()).isGreaterThan(0);
 	}
+	
+	
+	
 	@Test
 	@DisplayName("JUNIT test for JPQL NativeSQL Indexed Pram")
 	public void givenQuestionName_whenFindByJPQLNativeIndexed_thenReturnQuestionObject()
@@ -189,7 +192,7 @@ public class QuestionRepositoryTests {
 		question = QuestionEntity.builder().question("what si java")
 				.correctAnswer("programming language")
 				.optionA("coffe")
-				.optionB("programming language")
+				.optionB("programming language  ")
 				.optionC("name")
 				.optionD("none")
 				.build();
